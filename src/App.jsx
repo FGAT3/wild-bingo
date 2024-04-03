@@ -45,14 +45,16 @@ export default function App() {
         <img className="logo" src={logo} alt="" />
         <h1 className="title">Wild Bingo</h1>
       </header>
-      <p> À vous de jouez !</p>
-      <p>Cochez les cases pour valider vos Features du P2 !</p>
+      <main>
+      <p className="instruction"> À vous de jouez !</p>
+      <p className="instruction">Cochez les cases pour valider vos Features du P2 !</p>
       <NamesColumn
         names={names}
         features={features}
         onNameChange={handleNameChange}
         onFeatureChange={handleFeatureChange}
       />
+      </main>
       <footer>
         <p>© Made with 🤍 by wilders</p>
       </footer>
